@@ -1,0 +1,179 @@
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Spartan", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "League Spartan", sans-serif;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+header {
+    font-family: "League Spartan", sans-serif;
+    color: var(--VeryDarkMagenta);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.text {
+    color: var(--DarkGrayishMagenta);
+    text-align: center;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+.star-container {
+    border-radius: 5px;
+    display: grid;
+    justify-content: center;
+    background: var(--LightGrayishMagenta);
+    height: fit-content;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.star-container div {
+    text-align: center;
+}
+
+.star-container label {
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
+}
+
+.title-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 5px;
+    background: var(--VeryDarkMagenta);
+    color: var(--LightGrayishMagenta);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.title-holder img {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
+.title-holder div:nth-child(2) {
+    padding-left: 1rem;
+}
+
+.name,
+.title {
+    font-weight: 500;
+}
+
+.title-holder .title {
+    color: var(--SoftPink);
+}
+
+@media screen and (min-width:990px) {
+
+    main {
+        padding: 2rem 4rem;
+    }
+
+    main .first-session {
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }   
+
+    .first-session .sub-session {
+        display: grid;
+        align-items: center;
+        justify-items: left;
+        width: 50%;
+    }
+
+    .first-session .sub-session header {
+        display: grid;
+        justify-content: left;
+        align-items: center;
+        max-width: 60%;
+
+    }
+
+    header {
+        color: var(--VeryDarkMagenta);
+        text-align: left;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    .star-container {
+        display: flex;
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+        width: fit-content;
+    }
+
+    .star-container div{
+        padding-right: 1rem;
+    }
+
+    .star-two{
+        margin-left: 2rem;
+    }
+
+    .star-three{
+        margin-left: 4rem;
+        padding-right: 3.2rem;
+    }
+
+
+    .last-section{
+        display: flex;
+    }
+
+    .title-holder{
+        margin-right: 1rem;
+    }
+
+    .tone{
+        margin-bottom: 3rem;
+    }
+
+    .ttwo{
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .tthree{
+        margin-top: 3rem;
+        margin-right: 0rem;
+    }
+
+}
